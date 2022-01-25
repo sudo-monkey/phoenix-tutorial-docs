@@ -1,7 +1,7 @@
 # Tutorial
 
 This repository is based on Phoenix docs for self-learning and developer's own reference in future.
-Readme file will be update to go along with developer's learning.
+Readme file will be updated to go along with developer's learning.
 
 The project was initialized by using `mix phx.new tutorial --live`
 
