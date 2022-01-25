@@ -8,6 +8,7 @@ defmodule TutorialWeb.Router do
     plug :put_root_layout, {TutorialWeb.LayoutView, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug TutorialWeb.Plugs.Locale, "en" # plug for Local language
   end
 
   pipeline :api do

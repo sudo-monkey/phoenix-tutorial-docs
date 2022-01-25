@@ -46,8 +46,7 @@ defmodule TutorialWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
-  # added custom function plug :introspect
-  plug :introspect
+  plug :introspect # added custom function plug :introspect
   plug TutorialWeb.Router
 
   #custom function plug that display HTML connection parameters
