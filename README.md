@@ -1,5 +1,7 @@
 # Tutorial
 
+This repository is based on Phoenix docs for self-learning and developer's own reference in futue. The project was initialized by using `mix phx.new tutorial --live`
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
@@ -8,12 +10,9 @@ To start your Phoenix server:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
-## Learn more
+## Author self-notes
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+  * The controller for [`localhost:4000/hello`] has been replaced from default to 'greeting' controller. Which takes parameter from the url and return back to the user such as [`localhostL4000/hello/monkeycoder`].
+  * Functional plug has been installed that returns connection details which can be observed from terminal. The implementation is decribed inside `lib/tutorial_web/endpoint.ex`.
+  * Module plug has been installed that returns "default language" indicator inside layout and visible on every page. The implementation can be observed from `lib/tutorial_web/plugs` && `/router.ex`. To change the "language", run [`localhost:400/?locale=fr`].

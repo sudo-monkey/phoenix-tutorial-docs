@@ -17,6 +17,7 @@
                         'Elixir.TutorialWeb.LayoutView',
                         'Elixir.TutorialWeb.PageController',
                         'Elixir.TutorialWeb.PageView',
+                        'Elixir.TutorialWeb.Plugs.Locale',
                         'Elixir.TutorialWeb.Router',
                         'Elixir.TutorialWeb.Router.Helpers',
                         'Elixir.TutorialWeb.Telemetry']},
