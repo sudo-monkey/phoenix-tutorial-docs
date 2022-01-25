@@ -18,7 +18,9 @@ defmodule TutorialWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    # added endpoint to index function custom "hello" controller
     get "/hello", HelloController, :index
+    # added endpoint to greeting function, takes parameter :name from url
     get "/hello/:name", HelloController, :greeting
 
   end

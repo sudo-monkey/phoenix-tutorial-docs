@@ -46,5 +46,17 @@ defmodule TutorialWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
+  # added custom function plug :introspect
+  plug :introspect
   plug TutorialWeb.Router
+
+  #custom function plug that display HTML connection parameters
+  def introspect(conn, _opts) do
+    IO.puts"""
+    Verb: #{inspect(conn.method)}
+    Host: #{inspect(conn.host)}
+    Headers: #{inspect(conn.req_headers)}
+    """
+    conn
+  end
 end

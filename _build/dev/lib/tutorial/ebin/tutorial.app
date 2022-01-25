@@ -12,6 +12,8 @@
                         'Elixir.TutorialWeb.ErrorHelpers',
                         'Elixir.TutorialWeb.ErrorView',
                         'Elixir.TutorialWeb.Gettext',
+                        'Elixir.TutorialWeb.HelloController',
+                        'Elixir.TutorialWeb.HelloView',
                         'Elixir.TutorialWeb.LayoutView',
                         'Elixir.TutorialWeb.PageController',
                         'Elixir.TutorialWeb.PageView',
