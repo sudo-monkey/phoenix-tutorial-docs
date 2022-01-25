@@ -5,7 +5,7 @@ This repository is based on Phoenix docs for self-learning and developer's own r
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
+  * [optional]Create and migrate your database with `mix ecto.setup`
   * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
@@ -13,6 +13,6 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 ## Author self-notes
 
-  * The controller for [`localhost:4000/hello`] has been replaced from default to 'greeting' controller. Which takes parameter from the url and return back to the user such as [`localhostL4000/hello/monkeycoder`].
-  * Functional plug has been installed that returns connection details which can be observed from terminal. The implementation is decribed inside `lib/tutorial_web/endpoint.ex`.
-  * Module plug has been installed that returns "default language" indicator inside layout and visible on every page. The implementation can be observed from `lib/tutorial_web/plugs` && `/router.ex`. To change the "language", run [`localhost:400/?locale=fr`].
+  * MVC:The controller for [localhost:4000/hello] has been replaced from default to 'greeting' controller. Which takes parameter from the url and return back to the user such as [localhostL4000/hello/monkeycoder].
+  * Plug: Functional plug has been installed that returns connection details which can be observed from terminal. The implementation is decribed inside `lib/tutorial_web/endpoint.ex`.
+  * Plug: Module plug has been installed that returns "default language" indicator inside layout and visible on every page. The implementation can be observed from `lib/tutorial_web/plugs` && `/router.ex`. To change the "language", run [localhost:400/?locale=fr].
